@@ -347,108 +347,6 @@ void tree()                                 ///OID-18
 
 }
 
-void treeSnows(){
-
-     ///tree1
-    float t = 0.5;
-    glScalef(1.5,1.50,0);
-    glBegin(GL_QUADS);
-    glColor3f(0.3f, 0.3f, 0.0f);
-    glVertex2f(0.048f, 0.4f-t);
-    glVertex2f(0.064f, 0.4f-t);
-    glVertex2f(0.064f, 0.53f-t);
-    glVertex2f(0.048f, 0.53f-t);
-    glEnd();
-    glBegin(GL_TRIANGLES);
-    glColor3f(209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glVertex2f(0.03f,0.47f-t);
-    glVertex2f(0.081f,0.47f-t);
-    glVertex2f(0.06f,0.68f-t);
-    glEnd();
-
-    glBegin(GL_TRIANGLES);
-    glColor3f(209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glVertex2f(0.03f,0.48f-t);
-    glVertex2f(0.082f,0.48f-t);
-    glVertex2f(0.07f,0.64f-t);
-    glEnd();
-
-    glLoadIdentity();
-
-    ///tree2
-    glPushMatrix();
-    glScalef(-1.5,1.50,0);
-    glBegin(GL_QUADS);
-    glColor3f(0.3f, 0.3f, 0.0f);
-    glVertex2f(0.048f, 0.4f-t);
-    glVertex2f(0.064f, 0.4f-t);
-    glVertex2f(0.064f, 0.53f-t);
-    glVertex2f(0.048f, 0.53f-t);
-    glEnd();
-    glBegin(GL_TRIANGLES);
-    glColor3f(209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glVertex2f(0.03f,0.47f-t);
-    glVertex2f(0.081f,0.47f-t);
-    glVertex2f(0.06f,0.68f-t);
-    glEnd();
-
-    glBegin(GL_TRIANGLES);
-    glColor3f(209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glVertex2f(0.03f,0.48f-t);
-    glVertex2f(0.082f,0.48f-t);
-    glVertex2f(0.07f,0.64f-t);
-    glEnd();
-
-    glLoadIdentity();
-
-    ///tree3
-    glBegin(GL_QUADS);
-    glColor3f(0.3f, 0.3f, 0.0f);
-    glVertex2f(-0.6f,-0.15f);
-    glVertex2f(-0.624f,-0.15f);
-    glVertex2f(-0.624f,0.08f);
-    glVertex2f(-0.6f,0.08f);
-    glEnd();
-
-    circle(0.04,-0.645,0.13,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,-0.58,0.13,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.06,-0.61,0.2,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-
-    circle(0.04,-0.67,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,-0.56,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,-0.615,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-
-    ///tree4
-    glBegin(GL_QUADS);
-    glColor3f(0.3f, 0.3f, 0.0f);
-    glVertex2f(0.6f,-0.15f);
-    glVertex2f(0.624f,-0.15f);
-    glVertex2f(0.624f,0.08f);
-    glVertex2f(0.6f,0.08f);
-    glEnd();
-
-    circle(0.04,0.645,0.13,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,0.58,0.13,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.06,0.61,0.2,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-
-    circle(0.04,0.67,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,0.56,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-    circle(0.04,0.615,0.1,209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
-    glEnd();
-}
-
-
 void human(float red, float green, float blue, float x, float y)    ///OID-21
 {
     glPushMatrix();
@@ -889,6 +787,21 @@ void sky19()                             ///OID-1
 
     glEnd();
 }
+
+void snowsky19()                             ///OID-1
+{
+    ///snow sky
+    glBegin(GL_QUADS);
+    glColor3ub(132, 199, 227);
+    glVertex2f(-1.0f, 0.4f);
+    glVertex2f(1.0f, 0.4f);
+    //glColor3ub(200,224,232);
+    glVertex2f(1.0f, 1.0f);
+    //glColor3ub(255,255,255);
+    glVertex2f(-1.0f, 1.0f);
+
+    glEnd();
+}
 void circle1(float p1, float q1, float r1)
 {
     int i;
@@ -938,6 +851,21 @@ void update_cloud(int value)        ///AFID-1
 void skatingroad()                             ///OID-17
 {
     glBegin(GL_QUADS);
+    glColor3ub(69, 158, 20);
+    glVertex2f(-1.0f, -0.5f);
+    glColor3ub(40, 200, 10);
+    glVertex2f(1.0f, -0.5f);
+    glColor3ub(80, 160, 40);
+    glVertex2f(1.0f, -0.1f);
+    glColor3ub(50, 180, 30);
+    glVertex2f(-1.0f, -0.1f);
+    glEnd();
+
+
+}
+void snowSkatingroad()                             ///OID-17
+{
+    glBegin(GL_QUADS);
     glColor3f(209.0f / 255.0f, 227.0f / 255.0f, 255.0f / 255.0f);
     glVertex2f(-1.0f, -0.5f);
     glVertex2f(1.0f, -0.5f);
@@ -947,6 +875,7 @@ void skatingroad()                             ///OID-17
 
 
 }
+
 
 void road19()                             ///OID-16
 {
@@ -1042,6 +971,80 @@ void road19()                             ///OID-16
 }
 
 void hills()                              ///OID-4
+{
+    ///left1
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(-1.1,0.40);
+    glColor3ub(176,196,222);
+    glVertex2f(-0.85,0.9);
+    glColor3ub(34,139,34);
+    glVertex2f(-0.70,0.40);
+    glEnd();
+
+    ///left2
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(-0.8,0.40);
+    glColor3ub(176,196,222);
+    glVertex2f(-0.65,0.7);
+    glColor3ub(34,139,34);
+    glVertex2f(-0.50,0.40);
+    glEnd();
+
+    ///left3
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(-0.6,0.40);
+    glColor3ub(176,220,222);
+    glVertex2f(-0.35,0.8);
+    glColor3ub(34,200,34);
+    glVertex2f(-0.20,0.40);
+    glEnd();
+
+    ///left3
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(-0.35,0.40);
+    glColor3ub(176,250,222);
+    glVertex2f(-0.0,0.65);
+    glColor3ub(34,240,34);
+    glVertex2f(0.20,0.40);
+    glEnd();
+
+    ///left4
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(0.10,0.40);
+    glColor3ub(176,220,222);
+    glVertex2f(0.25,0.55);
+    glColor3ub(34,200,34);
+    glVertex2f(0.40,0.40);
+    glEnd();
+
+    ///left5
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(0.40,0.40);
+    glColor3ub(176,210,222);
+    glVertex2f(0.55,0.65);
+    glColor3ub(34,200,34);
+    glVertex2f(0.75,0.40);
+    glEnd();
+
+    ///left6
+    glBegin(GL_TRIANGLES);
+    glColor3ub(200,224,232);
+    glVertex2f(0.70,0.40);
+    glColor3ub(176,196,222);
+    glVertex2f(0.95,0.82);
+    glColor3ub(34,180,34);
+    glVertex2f(1.1,0.40);
+    glEnd();
+
+
+}
+void snowhills()                              ///OID-4
 {
     ///left1
     glBegin(GL_TRIANGLES);
@@ -1323,30 +1326,42 @@ void Display3(){
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f); /// Set background color to white
     glClear(GL_COLOR_BUFFER_BIT);       /// Clear the color buffer (background)
 
-    sky19();
-    hills();
+    if(isSnow)
+    {
+        snowsky19();
+        snowhills();
+    }
+    else{
+        sky19();
+        Cloud();
+        hills();
+    }
+
     river();
     flow();
     Wire();
     drawcable();
     drawcable2();
-    Cloud();
+
     road19();
-    skatingroad();
+
     if(isSnow)
     {
-        treeSnows();
+        snowSkatingroad();
+        snowman();
     }
-    else{
-        tree();
-    }
+    else
+    {
 
+        skatingroad();
+    }
+    tree();
 
     human(1,0,1,man1Position,0);
     human(0.5,0.2,0.6, man4Position,0);
     human(0,1,1,man2Position,0);
     human(1,0.5,0.5,man3Position,0);
-    snowman();
+
     car();
     suv();
 
@@ -1354,10 +1369,6 @@ void Display3(){
     {
         snow_fall();
     }
-
-
-
-
 
     glFlush();  /// Render now
 }
