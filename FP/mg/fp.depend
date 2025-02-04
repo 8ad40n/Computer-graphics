@@ -891,7 +891,7 @@
 1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_ext.h
 	<stdarg.h>
 
-1738609362 source:d:\aiub\coding\computer graphics\fp\mg\main.cpp
+1738687213 source:d:\aiub\coding\computer graphics\fp\mg\main.cpp
 	<windows.h>
 	<GL/glut.h>
 	<stdlib.h>
