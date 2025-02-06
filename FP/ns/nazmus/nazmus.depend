@@ -1,29 +1,11 @@
 # depslib dependency file v1.0
-1738730627 source:d:\aiub\coding\computer graphics\fp\fp\main.cpp
+1738710558 source:d:\aiub\coding\computer graphics\fp\ns\nazmus\main.cpp
+	<cstdio>
 	<iostream>
+	<windows.h>
+	<GL/gl.h>
 	<GL/glut.h>
 	<math.h>
-	<GL/freeglut.h>
-	<cmath>
-	<windows.h>
-	<cstdio>
-	<GL/gl.h>
-	<vector>
-	<cstdlib>
-
-1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glut.h
-	"freeglut_std.h"
-
-1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_std.h
-	<windows.h>
-	<EGL/egl.h>
-	<GLES/gl.h>
-	<GLES2/gl2.h>
-	<OpenGL/gl.h>
-	<OpenGL/glu.h>
-	<GL/gl.h>
-	<GL/glu.h>
-	<stdlib.h>
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\windows.h
 	<_mingw.h>
@@ -878,16 +860,23 @@
 	<windows.h>
 	<stddef.h>
 
+1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glut.h
+	"freeglut_std.h"
+
+1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glu.h
 	<GL/gl.h>
 
 1526093416 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\math.h
 	<crtdefs.h>
-
-1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut.h
-	"freeglut_std.h"
-	"freeglut_ext.h"
-
-1730041731 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\freeglut_ext.h
-	<stdarg.h>
 
